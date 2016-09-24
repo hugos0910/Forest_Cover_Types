@@ -18,7 +18,19 @@ The engineered features in this dataset can be found online on the Kaggle forum.
 * Fire_Road_2 -  Absolute value of the difference of the distance to nearest wildfire ignition points and roadway.
 
 ## Choosing Classifiers
-There are five classifiers used here: random forest, extra trees, support vector machine, k nearest neighbors, and logistic regression.  The optimal parameters are obtained by using RandomizedSearchCV with 10 folds cross validation.  The random forest and extra trees classifier both produced appromixately 80% accuracy, which are significantly better than the 75% produced by SVM, 71% by KNN, and 60% by logistic regression.  
+The following five classifiers were chosen:
+* Random Forest (RF)
+* Extra Trees (ET)
+* Support Vector Machine (SVM)
+* K Nearest Neighbors
+* Logistic Regression (LR)
+
+The optimal parameters are obtained by using RandomizedSearchCV with 10 folds cross validation.  The scores produced are listed as followed:
+* RF ~ 0.80
+* ET ~ 0.80
+* SVM ~ 0.75
+* KNN ~ 0.71
+* LR ~ 0.60
 
 ## Result
 Although random forest and extra trees produced similar cross validation accuracy, extra tress performed better on the test set: random forest produced 78% accuracy while extra trees produced 80%.  This puts me on the Kaggle ranking of the top 10% of the competitors if the competition is still active.
